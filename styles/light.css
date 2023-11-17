@@ -1,12 +1,31 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --subtitle-color: #000;
+  --accent-color: #000;
+  --text-color: #000;
+  --title-color: #ffc2e6;
+  --background-color: #f78ecb;
+  --background-image: url("../images/cover-image-light.png");
+  --shadow: #ffc0cb;
+}
+.theme_light .rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root .theme_auto {
+    --subtitle-color: #000;
+    --accent-color: #000;
+    --text-color: #000;
+    --shadow: #ffc0cb;
+    --title-color: #ffc2e6;
+    --background-color: #f78ecb;
+    --background-image: url("../images/cover-image-light.png");
+  }
+  .theme_auto .rec {
+    display: none;
+  }
 }

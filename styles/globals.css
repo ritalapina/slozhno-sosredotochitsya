@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 *,
@@ -39,4 +41,7 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
 }
