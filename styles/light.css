@@ -3,29 +3,43 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --subtitle-color: #000;
-  --accent-color: #000;
-  --text-color: #000;
-  --title-color: #ffc2e6;
-  --background-color: #f78ecb;
-  --background-image: url("../images/cover-image-light.png");
-  --shadow: #ffc0cb;
+  --font-family: "IBM Plex mono", monospace;
+  --accent-color: #ff0070;
+  --title-decor: #ff0070;
+  --header-nav: #353430;
+  --button-border-color: #353430;
+  --button-border-hover: rgba(50, 49, 45, 0.4);
+  --header__title-color: #ffc2e6;
+  --header__title-text-shadow: #ff0070;
+  --background-image: url(../images/cover-image-light.png);
+  --text-focus-text: #000028;
+  --background-focus-text: #ff8dcb;
+  --list__text-color: #353430;
+  --list__title-color: #353430;
+  --link-text-shadow: #ff8dcb;
+  --header__title-color-text-shadow: #ffc2e6;
 }
-.theme_light .rec {
+
+.theme_light .header__theme-menu-decor {
   display: none;
 }
 
 @media (prefers-color-scheme: light) {
-  :root .theme_auto {
-    --subtitle-color: #000;
-    --accent-color: #000;
-    --text-color: #000;
-    --shadow: #ffc0cb;
-    --title-color: #ffc2e6;
-    --background-color: #f78ecb;
-    --background-image: url("../images/cover-image-light.png");
+  :root {
+    --font-family: "IBM Plex mono";
+    --accent-color: #ff0070;
+    --title-decor: #ff0070;
+    --header-nav: #353430;
+    --button-border-color: #353430;
+    --button-border-hover: rgba(50, 49, 45, 0.4);
+    --header__title-color: #ffc2e6;
+    --header__title-text-shadow: #ff0070;
+    --text-focus-text: #000028;
+    --background-focus-text: #ff8dcb;
+    --background-image: url(../images/cover-image-light.png);
+    --list__title-color: #353430;
+    --list__text-color: #353430;
+    --link-text-shadow: #ff8dcb;
+    --header__title-color-text-shadow: #ffc2e6;
   }
-  .theme_auto .rec {
-    display: none;
-  }
-}
+

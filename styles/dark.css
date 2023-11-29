@@ -5,23 +5,27 @@
 */
 
 .page.theme_dark {
-  --background-image: url("../images/cover-image-dark.png");
-  --subtitle-color: #000;
-  --title-color: #DB00FF;
-  --background-color: #FF0070;
-  --accent-color: #FF0070;
-  --text-color:  #F1B2CE;
-  --shadow: #FF0070;
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --font-family: "IBM Plex mono", monospace;
+  --accent-color: #ff0070;
+  --title-decor: #ff0070;
+  --header-nav: #ff0070;
+  --button-border-color: #ff0070;
+  --button-border-hover: rgba(255, 0, 112, 0.4);
+  --header__title-color: #db00ff;
+  --header__title-text-shadow: #ff0070;
+  --background-image: url(../images/cover-image-dark.png);
+  --text-focus-text: #000028;
+  --background-focus-text: #ff0070;
+  --list__title-color: #000028;
+  --list__text-color: #f1b2ce;
+  --link-text-shadow: #ff0070;
+  --header__title-color-text-shadow: #ffc2e6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root .theme_auto {
-    --subtitle-color: #000;
-    --title-color: #DB00FF;
-    --background-color: #FF0070;
-    --accent-color: #FF0070;
-    --text-color:  #F1B2CE;
-    --shadow: #FF0070;
-    --background-image: url("../images/cover-image-dark.png");
-  }
+.theme_dark .header__theme-menu-decor {
+  display: flex;
 }
