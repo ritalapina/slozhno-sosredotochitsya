@@ -6,8 +6,6 @@
   --font-family: "IBM Plex mono", monospace;
   --accent-color: #ff0070;
   --title-decoration: #ff0070;
-  --header-nav: #353430;
-  --button-border-color: #353430;
   --button-border-hover: rgba(50, 49, 45, 0.4);
   --header__title-color: #ffc2e6;
   --header__title-text-shadow: #ff0070;
@@ -18,6 +16,36 @@
   --list__title-color: #353430;
   --link-text-shadow: #ff8dcb;
   --header__title-color-text-shadow: #ffc2e6;
+  --main-text-color: #353430;
+  --title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --title-decoration: #ff8dcb;
+  --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+  --background-color: #fff1f7;
+  --background-image: url(../images/cover-image-light.png);
+  --section-title-color: var(--main-text-color);
+  --border-color: var(--title-shadow);
+  --corners-color: var(--main-text-color);
+  --link-shadow: var(--title-color);
+  --rec-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-text-color: #353430;
+    --title-color: #ffc2e6;
+    --title-shadow: #ff0070;
+    --hover-color: 1px solid rgba(50, 49, 45, 0.4);
+    --background-color: #fff1f7;
+    --background-image: url(../images/cover-image-light.png);
+    --article-title-color: var(--main-text-color);
+    --section-title-color: var(--main-text-color);
+    --border-color: var(--title-shadow);
+    --corners-color: var(--main-text-color);
+    --title-decoration: #ff8dcb;
+    --link-shadow: var(--title-color);
+    --rec-color: var(--background-color);
+  }
 }
 
 .theme_light .header__theme-menu-decor {
@@ -29,22 +57,7 @@
   переключая тему
 */
 
-.page.theme_light {
-  --main-text-color: #353430;
-  --title-color: #ffc2e6;
-  --title-shadow: #ff0070;
-  --title-decoration: #ff8dcb;
-  --hover-color: 1px solid rgba(50, 49, 45, 0.4);
-  --background-color: #fff1f7;
-  --background-image: url(../images/cover-image-light.png);
-  --article-title-color: var(--main-text-color);
-  --section-title-color: var(--main-text-color);
-  --border-color: var(--title-shadow);
-  --corners-color: var(--main-text-color);
-  --link-shadow: var(--title-color);
-  --rec-color: var(--background-color);
-}
-
 .page.theme_light .header__rec {
   display: none;
 }
+

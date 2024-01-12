@@ -10,7 +10,7 @@
 body {
   font-size: 18px;
   font-weight: 400; 
-  font-family: var(--font-family);
+  font-family: var(--font-family, "IBM Plex mono", monospace);
   min-inline-size: 375px;
   max-inline-size: 1024px;
   margin: 0 auto;
@@ -36,16 +36,6 @@ ul {
 picture {
   margin: 0;
   padding: 0;
-}
-
-button,
-a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .decorated-zone::before {

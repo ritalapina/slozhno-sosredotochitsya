@@ -48,6 +48,16 @@
   gap: 10px;
 }
 
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .header__theme-menu-button {
   font-size: 18px;
   font-weight: 400;
