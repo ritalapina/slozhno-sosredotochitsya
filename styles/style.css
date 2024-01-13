@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   --transition-duration: 0.25s;
   background: var(--background-image) no-repeat top center, var(--background-color);
-  background-size: auto 768px;
+  background-size: cover;
   color: var(--main-text-color);
   transition-duration: var(--transition-duration);
   background-attachment: fixed;
@@ -15,6 +15,29 @@
 .header {
   padding: 0 20px;
   position: relative;
+  min-height: 100vh;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--corners-color);
+  border-bottom: 1px solid var(--corners-color);
+  left: 20px;
+  bottom: 20px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px; 
+  right: 20px;
+  top: 20px;
+  border-right: 1px solid var(--corners-color);
+  border-top: 1px solid var(--corners-color);
 }
 
 .header__rec {
@@ -48,15 +71,6 @@
   gap: 10px;
 }
 
-button,
-a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .header__theme-menu-button {
   font-size: 18px;
@@ -159,6 +173,10 @@ a {
   color: var(--article-title-color);
 }
 
+.title-decoration {
+  background: var(--title-decoration);
+}
+
 .section__article-title_regular {
   font-weight: 400;
 }
@@ -227,6 +245,8 @@ a {
   position: relative;
   text-align: center;
   padding: 282px 20px;
+  min-height: 668px;
+  height: 100vh;
 }
 
 .footer__title {
@@ -241,6 +261,20 @@ a {
 @media (width < 768px) and (width >= 375px) {
   .header {
     padding: 0 10px;
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .decorated-zone::before {
+    left: 10px;
+    bottom: 17px;
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .decorated-zone::after {
+    right: 10px;
+    top: 10px;
   }
 }
 

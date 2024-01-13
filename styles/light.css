@@ -3,29 +3,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --font-family: "IBM Plex mono", monospace;
-  --accent-color: #ff0070;
   --title-decoration: #ff0070;
-  --button-border-hover: rgba(50, 49, 45, 0.4);
-  --header__title-color: #ffc2e6;
-  --header__title-text-shadow: #ff0070;
-  --background-image: url(../images/cover-image-light.png);
-  --text-focus-text: #000028;
-  --background-focus-text: #ff8dcb;
-  --list__text-color: #353430;
-  --list__title-color: #353430;
-  --link-text-shadow: #ff8dcb;
-  --header__title-color-text-shadow: #ffc2e6;
-  --main-text-color: #353430;
   --title-color: #ffc2e6;
   --title-shadow: #ff0070;
-  --title-decoration: #ff8dcb;
   --hover-color: 1px solid rgba(50, 49, 45, 0.4);
   --background-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
   --section-title-color: var(--main-text-color);
   --border-color: var(--title-shadow);
   --corners-color: var(--main-text-color);
+  --title-decoration: #ff8dcb;
   --link-shadow: var(--title-color);
   --rec-color: var(--background-color);
 }
@@ -48,7 +35,7 @@
   }
 }
 
-.theme_light .header__theme-menu-decor {
+.theme_light .header__theme-menu-decoration {
   display: none;
 }
 /*
